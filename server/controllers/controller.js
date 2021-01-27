@@ -1,6 +1,6 @@
 
-// const { Product } = require('../models/models');
 
+const { Product } = require('../models/models');
 
 module.exports.index = (request, response) => {
     response.json({
@@ -8,20 +8,7 @@ module.exports.index = (request, response) => {
     })
 }
 
-// module.exports.createProduct = (request, response) => {
-//     const { name, item } = request.body;
-//     Product.create({
-//         name,
-//         item
-//     })
-//         .then(product => reponse.json(product))
-//         .catch(err => reponse.json(err))
-// }
 
-// const mongoose = require("mongoose");
-
-
-const { Product } = require('../models/models');
 
 module.exports.index = (request, response) => {
     response.json({
