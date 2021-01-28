@@ -3,11 +3,11 @@ import axios from 'axios';
 import { Link } from '@reach/router';
 
 
-export default props => {
+const ProductList = props => {
 
     const { removeFromDom } = props;
     const deleteProduct = (productId) => {
-        axios.delete('http://localhost:8030/api/product/' + productId)
+        axios.delete('http://localhost:8030/api/products/' + productId)
             .then(res => {
                 removeFromDom(productId)
             })
@@ -29,3 +29,5 @@ export default props => {
         </div>
     )
 }
+
+export default ProductList;
